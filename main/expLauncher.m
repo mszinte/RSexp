@@ -15,7 +15,7 @@
 % Design idea
 % -----------
 % MB6 with 2mm isotropic voxels
-% TR of 800 ms , 500 TRs in total
+% TR of 800 ms, 500 TRs in total
 % simple fixation, eye tracking control
 
 % To do

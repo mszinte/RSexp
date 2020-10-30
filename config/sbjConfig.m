@@ -12,7 +12,7 @@ function [const]=sbjConfig(const)
 % const : struct containing constant configurations
 % ----------------------------------------------------------------------
 % Function created by Martin SZINTE (martin.szinte@gmail.com)
-% Last update : 20 / 06 / 2020
+% Last update : 06 / 10 / 2020
 % Project :     RSexp
 % Version :     1.0
 % ----------------------------------------------------------------------
@@ -27,6 +27,13 @@ if const.expStart
     else
         const.sjct              =  sprintf('sub-0%i',const.sjctNum);
     end
+end
+
+const.sesNum = input(sprintf('\n\tSession number: '));
+if const.sesNum > 9
+    const.session           =  sprintf('ses-%i',const.sesNum);
+else
+    const.session           =  sprintf('ses-0%i',const.sesNum);
 end
 
 const.runNum            =   input(sprintf('\n\tRun number (1 to 2): '));
